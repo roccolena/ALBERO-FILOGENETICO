@@ -10,7 +10,7 @@ typedef struct nodo {
     } nodo;
 
 /*struct che rappresenta l'albero, formato da un'array di puntatori alle liste di adiacenza dei nodi e il numero dei nodi
-primo elemento della lista, è il proprietario della lista*/
+primo elemento della lista, Ã¨ il proprietario della lista*/
 typedef struct albero {
         int n;
         nodo **liste;
@@ -118,7 +118,7 @@ void foglie(nodo *n){
         printf("%s\t",n1->etichetta_nodo);
 }
 
-/*inserire lista di adiacenza del nuovo nodo,alloca uno spazio in più nella lista dei puntatori e
+/*inserire lista di adiacenza del nuovo nodo,alloca uno spazio in piÃ¹ nella lista dei puntatori e
 la aggiunge alla lista e richiama inverti*/
 void aggiungi_lista(albero *a, nodo *x){
     nodo *z=NULL;
@@ -161,7 +161,7 @@ void aggiunta_nodo(albero *a){
 
 }
 
-//controlla se il nodo in ingresso è una foglia, restituendo il numero di elementi della sua lista di adiacenza
+//controlla se il nodo in ingresso Ã¨ una foglia, restituendo il numero di elementi della sua lista di adiacenza
 int controllo_foglia(nodo *n){
     int c=0;
     while(n!=NULL){
@@ -219,7 +219,7 @@ void cancella_nodo(albero *a){
 }
 
 /*modifica di una foglia
-stampa la lista delle foglie, controlla se è una foglia(con CONT)
+stampa la lista delle foglie, controlla se Ã¨ una foglia(con CONT)
 modifica la propria lista e modifica la lista del padre*/
 void modifica_nodo(albero *a){
     int i,c=0,cont=0,peso;
